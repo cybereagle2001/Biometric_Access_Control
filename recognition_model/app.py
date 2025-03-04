@@ -110,6 +110,8 @@ def main():
 		rect = patches.Rectangle((x, y), width, height, linewidth=2, edgecolor='green', facecolor='white', alpha=0.3)
 		ax.add_patch(rect)
 		plt.text(x + 10, y + 25, "MATCHED", fontsize=14, fontweight="bold", color="green")
+		title = "MATCHED "+image_name
+		plt.suptitle(title, fontsize=16, fontweight='bold')
 		plt.show()
 		print("Fingerprint matches.")
 		sys.exit(0)
