@@ -54,7 +54,7 @@ Biometric_Access_Control/
 │   ├── app.py              # Main fingerprint recognition script
 │   ├── enhance/            # Image enhancement functions
 │   │── database/           # Fingerprint dataset
-|   │── search.py               # Main entry point for fingerprint search
+|   │── search.py           # Main entry point for fingerprint search
 │── requirements.txt        # List of dependencies
 │── README.md               # Project documentation
 ```
