@@ -99,11 +99,14 @@ def main():
 		plt.show()
 		# Plot matches
 		img3 = cv2.drawMatches(img1, kp1, img2, kp2, matches, flags=2, outImg=None)
+		img_height, img_width, _ = img3.shape
 		plt.imshow(img3)
 		# DRAW THE GREEN BOX
 		plt.axis("off")
 		fig, ax = plt.gca(), plt.gca()
-		x, y, width, height = 10, 10, 150, 40
+		width, height = 150, 40
+		x = (img_width - width) // 2
+		y = 20
 		rect = patches.Rectangle((x, y), width, height, linewidth=2, edgecolor='green', facecolor='white', alpha=0.3)
 		ax.add_patch(rect)
 		plt.text(x + 10, y + 25, "MATCHED", fontsize=14, fontweight="bold", color="green")
