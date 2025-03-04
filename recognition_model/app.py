@@ -94,6 +94,7 @@ def main():
 		f, axarr = plt.subplots(1,2)
 		axarr[0].imshow(img4)
 		axarr[1].imshow(img5)
+		plt.suptitle("POSSIBLE MATCH", fontsize=16, fontweight='bold')
 		plt.show()
 		# Plot matches
 		img3 = cv2.drawMatches(img1, kp1, img2, kp2, matches, flags=2, outImg=None)
