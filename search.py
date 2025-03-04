@@ -1,10 +1,12 @@
 import os
 import sys
 
-db= "database"
-fingerprints = os.listdir(db)
+x= "database"
+fingerprints = os.listdir(x)
 
 for loop in fingerprints:
-    command = "sudo python3 recognition_model/app.py "+sys.argv[1]+" "+loop
-    os.system(command)
-
+    command = "sudo python3 app.py "+sys.argv[1]+" "+loop
+    exit_code = os.system(command)
+    if exit_code == 0:
+        print("Fingerprint matched. Stopping the loop.")
+        break
