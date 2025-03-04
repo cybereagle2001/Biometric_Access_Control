@@ -100,7 +100,7 @@ def main():
 		plt.imshow(img3)
 		plt.show()
 		print("Fingerprint matches.")
-		break
+		exit()
 	else:
 		print("Fingerprint does not match.")
 
