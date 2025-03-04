@@ -106,7 +106,7 @@ def main():
 		fig, ax = plt.gca(), plt.gca()
 		width, height = 150, 40
 		x = (img_width - width) // 2
-		y = 20
+		y = 280
 		rect = patches.Rectangle((x, y), width, height, linewidth=2, edgecolor='green', facecolor='white', alpha=0.3)
 		ax.add_patch(rect)
 		plt.text(x + 10, y + 25, "MATCHED", fontsize=14, fontweight="bold", color="green")
