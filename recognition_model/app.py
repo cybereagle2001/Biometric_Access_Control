@@ -70,8 +70,9 @@ def get_descriptors(img):
 
 
 def main():
+	"""GIVE THE FULL PATH OF THE FINGER PRINT AS FIRST ARGUMENT"""
 	image_name = sys.argv[1]
-	img1 = cv2.imread("database/" + image_name, cv2.IMREAD_GRAYSCALE)
+	img1 = cv2.imread(image_name, cv2.IMREAD_GRAYSCALE)
 	kp1, des1 = get_descriptors(img1)
 
 	image_name = sys.argv[2]
