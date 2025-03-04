@@ -100,10 +100,10 @@ def main():
 		plt.imshow(img3)
 		plt.show()
 		print("Fingerprint matches.")
-		exit()
+		sys.exit(0)
 	else:
-		print("Fingerprint does not match.")
-
+            print("Fingerprint does not match.")
+            sys.exit(1)
 
 
 if __name__ == "__main__":
