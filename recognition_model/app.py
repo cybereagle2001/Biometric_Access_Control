@@ -3,6 +3,7 @@ import os
 import sys
 import numpy
 import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 from enhance import image_enhance
 from skimage.morphology import skeletonize, thin
 
